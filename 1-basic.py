@@ -16,12 +16,19 @@ print(per_1.tam_isim())
 print(Personel.tam_isim(per_1))
 
 
-print(per_1.isim)
-print(per_1.soyisim)
-print(per_1.maas)
-print(per_1.eposta)
+# print(per_1.isim)
+# print(per_1.soyisim)
+# print(per_1.maas)
+# print(per_1.eposta)
 
 print(per_2.isim)
 print(per_2.soyisim)
 print(per_2.maas)
 print(per_2.eposta)
+
+'''
+Bu örnekte basit bir sınıf oluşturduk, bu sınıftan nesneler ürettik,
+self anahtar kelimesinin işlevini inceledik, 
+oluşturduğumuz sınıf için fonksiyon yazdık
+
+'''

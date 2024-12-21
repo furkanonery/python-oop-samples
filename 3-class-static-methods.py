@@ -9,29 +9,29 @@ class Personel:
         self.maas = maas
         self.eposta = f'{isim.lower()}.{soyisim.lower()}@firmaadi.com'.replace(' ','-')
         Personel.personel_sayisi += 1
-
+#########################################
     def tam_isim(self):
         return f'{self.isim} {self.soyisim}'
-
+                                        #Regular Methods
     def zam_uygula(self):
         self.maas = int(self.maas * self.zam_orani)
-
+#########################################
     @classmethod
     def zam_oranini_belirle(cls, zam_orani):
         cls.zam_orani = zam_orani
-
+                                        #Class Methods                            
     @classmethod
     def from_string(cls, per_str):
         isim, soyisim, maas = per_str.split('-')
         return cls(isim, soyisim, maas)
-
+#########################################
     @staticmethod
     def mesai_gunu(gun):
         if gun.weekday() == 5 or gun.weekday() == 6:
-            return 'Hafta Sonu'
+            return 'Hafta Sonu'                         #Static methods
         else:
             return 'Hafta İçi'
-
+#########################################
 from datetime import datetime
 
 tarih = datetime(2023,1,3)
@@ -52,6 +52,12 @@ per_2 = Personel('martha', 'smith', 27000)
 per_3 = Personel('test', 'user', 1000)
 
 print(per_1.eposta)
+
+
+'''
+Bu örnekte sınıf içinde kullanılan method çeşitlerini örneklendirdik,
+ve farklılıklarını gözettik.
+'''
 
 # print(Personel.zam_orani)
 # print(per_1.zam_orani)

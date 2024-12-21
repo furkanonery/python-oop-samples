@@ -33,3 +33,10 @@ print(per_1.maas)
 # per_1.zam_orani=1.10
 # pprint(per_1.__dict__)
 
+'''
+bu örnekte nesne ve sınıf değişkenleri; arasındaki farkı,
+ne zaman hangisinin kullanılması gerektiği,
+self ya da sınıfın direkt ismi kullanılarak atanılması gösterildi.
+'''
+
+
